@@ -8,8 +8,8 @@
 * 由Raspberry进行视频采集，并作为数据中转角色；
 * PC端使用TensorFlow深度学习框架实现机器学习算法，对接收到的数据进行处理，收录未知的类别并将处理结果反馈给Raspberry；
 * Raspberry根据反馈的结果通知Arduino控制硬件执行相应的分类操作。
-
-<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/master/source/images/1-1_System-flow-chart.png"/></div>
+https://github.com/YobeZhou/automatic_recycler/tree/master/source/images
+<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/tree/master/source/images/1-1_System-flow-chart.png"/></div>
 <div align=center>图1-1 系统流程图</div>
 
 # Arduino端
@@ -20,8 +20,8 @@
 &emsp;&emsp;PC端充当数据处理后台作用，其需要启动一个python应用程序，其中包括了与Raspberry建立局域网视频流数据的传输通道；作为客户端与Raspberry建立的TCP通信链路。
 
 # 项目成品
-<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/master/source/images/5-1_Front-view.JPG"/></div>
+<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/tree/master/source/images/5-1_Front-view.JPG"/></div>
 <div align=center>图5-1 正面图</div>
 
-<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/master/source/images/5-2_back image.JPG"/></div>
+<div align=center><img width="450" height="450" src="https://github.com/YobeZhou/automatic_recycler/tree/master/source/images/5-2_back image.JPG"/></div>
 <div align=center>图5-2 背面图</div>
