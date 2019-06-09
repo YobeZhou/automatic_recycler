@@ -27,4 +27,4 @@
 <div align=center>图5-2 背面图</div>
 
 <div aligin=center><img src="https://github.com/YobeZhou/automatic_recycler/blob/master/source/images/5-3_System-work.jpg"/></div>
-<div align=center>图5-3 系统工作</div>
+<div align=center>图5-3 调试过程</div>
