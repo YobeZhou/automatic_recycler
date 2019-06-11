@@ -31,11 +31,11 @@
 #include <EEPROM.h>
 #include "Stepper28BYJ48.h"
 
-#define DIR_PIN 4     // 控制方向
-#define STEP_PIN 5    // 控制速度
-#define ENABLE_PIN 6  // 使能控制
-#define INTERRUPT 3   // 中断1引脚
-#define BLINK_LED 13  // LED提示灯
+#define DIR_PIN 	4     // 控制方向
+#define STEP_PIN 	5     // 控制速度
+#define ENABLE_PIN 	6     // 使能控制
+#define INTERRUPT 	3     // 中断1引脚
+#define BLINK_LED 	13    // LED提示灯
 
 // start reading from the first byte (address 0) of the EEPROM
 int address = 0;
