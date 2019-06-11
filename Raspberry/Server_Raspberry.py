@@ -21,7 +21,7 @@ def setup():
     # 按物理位置编号GPIO
     GPIO.setmode(GPIO.BOARD)
 
-# 主进程的子线程，用以监听接收socket通信数据包
+# 主线程的子线程，用以监听接收socket通信数据包
 # 这是从 threading.Thread 继承创建一个新的子类
 class myThread (threading.Thread):
     def __init__(self, threadID, newSocket, newData):
@@ -60,17 +60,17 @@ if __name__ == '__main__':
     print("TCP server start @ %s:%d!" %(HOST_IP, HOST_PORT))
     print("wait for connection...")
 
-	# 开始接收TCP客户的连接，等待（阻塞式）连接的到来；
-	# conn--套接字对象，addr--已连接客户端的地址
+    # 开始接收TCP客户的连接，等待（阻塞式）连接的到来；
+    # conn--套接字对象，addr--已连接客户端的地址
     conn, addr = socket_tcp.accept()
     print ("Connected by %s", addr)
 
-	# 创建线程，用以辅助接收socket数据包
+    # 创建线程，用以辅助接收socket数据包
     thread1 = myThread(1, conn, 'init')
-	# 启动线程
+    # 启动线程
     thread1.start()
 	
-	# 通知Raspberry PC端就绪
+    # 通知Raspberry PC端就绪
     conn.send(b'ok!')
     while(True): 
         mydata = thread1.newData
@@ -104,6 +104,6 @@ if __name__ == '__main__':
     ser.close()
     conn.close()
     socket_tcp.close()
-	# 等待线程结束
+    # 等待线程结束
     thread1.join()
     print ("End of program!")
